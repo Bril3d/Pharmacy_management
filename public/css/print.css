@@ -1,0 +1,17 @@
+@media print {
+    body {
+        font-size: 12px;
+    }
+    .btn, nav {
+        display: none;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    table th, table td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+}
