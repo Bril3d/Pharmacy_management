@@ -5,6 +5,9 @@
 @section('content')
 <div class="container mt-4">
     <h1 class="mb-4">Dashboard</h1>
+                @if(session('error'))
+                    <div class="alert alert-danger my-2">{{ session('error') }}</div>
+                @endif
 <div class="row">
         <div class="col-md-3 mb-4">
             <div class="card shadow-sm border-0">

@@ -12,7 +12,7 @@ use App\Models\Medicine;
 use App\Http\Controllers\MedicineOrderController;
 
 Route::get('/', function () {
-    $latestMedicines = Medicine::latest()->take(5)->get();
+    $latestMedicines = Medicine::latest()->take(value: 5)->get();
 
     return view('home', compact('latestMedicines'));
 });
@@ -20,6 +20,7 @@ Route::get('/', function () {
 
 
 Auth::routes();
+
 Route::middleware(['auth'])->group(
     function () {
         Route::resource('orders', OrderController::class);

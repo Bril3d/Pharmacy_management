@@ -15,6 +15,6 @@ class AdminMiddleware
         }
 
         // Redirect if the user is not an admin
-        return redirect()->route('login')->with('error', 'You are not authorized to access this page.');
+        return redirect()->route('dashboard')->with('error', 'You are not authorized to access this page.');
     }
 }
