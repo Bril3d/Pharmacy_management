@@ -31,7 +31,7 @@ class MedicineController extends Controller
             'name' => 'required|string|max:255',
             'quantity' => 'required|integer',
             'price' => 'required|numeric',
-            'image' => 'requried|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
         $data = $request->all();
