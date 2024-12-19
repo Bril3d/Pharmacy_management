@@ -35,6 +35,7 @@ class MedicineOrderController extends Controller
             'customer_name' => $request->customer_name,
             'customer_address' => $request->customer_address,
             'total_price' => $totalPrice,
+            'user_id' => Auth::id()
         ]);
 
         // Attach the ordered medicine to the order with quantity and price

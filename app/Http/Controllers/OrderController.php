@@ -47,7 +47,7 @@ class OrderController extends Controller
             'customer_name' => $request->customer_name,
             'customer_address' => $request->customer_address,
             'total_price' => $totalPrice,
-            'user_id' => auth()->id(),
+            'user_id' => Auth::id(),
         ]);
 
         foreach ($request->medicines as $medicine) {
